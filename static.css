@@ -452,3 +452,9 @@ input[type="range"]::-webkit-slider-thumb {
     color: black;
     cursor: pointer;
 }
+
+hr {
+    position: relative;
+    width: 80%;
+    top: 250px;
+}
