@@ -470,9 +470,9 @@ hr {
 }
 
 .infosmall {
-    display: block;
+    display: inline-block;
     color: grey;
-    font-size: 12px;
+    font-size: 11px;
     position: relative;
     left: 10%;
     width: 70%;
