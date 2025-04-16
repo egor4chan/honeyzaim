@@ -14,6 +14,8 @@ const amountValue = document.getElementById("amount-val");
 const dateValue = document.getElementById("date-val");
 const amountValueLower = document.getElementById("amount-val-lower");
 
+const goupButton = document.querySelector('#goup');
+
 var menuIsOpened = 0;
 
 amountInput.addEventListener("input", () => {
@@ -27,6 +29,10 @@ dateInput.addEventListener("input", () => {
         dateValue.textContent = dateInput.value + ' день';
     }
 });
+
+goup.addEventListener('click', function() {
+    window.scroll(0, 0)
+})
 
 
 menu.addEventListener('click', function() {
