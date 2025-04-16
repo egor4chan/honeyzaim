@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <title>Медовый Займ - одобряем всем!</title>
+    <title>Document</title>
 </head>
 <body style="overflow-x: hidden;">
 
@@ -30,15 +30,22 @@
 
         <div class="inputs" id="input-window">
 
+            <h1>Деньги через 10 минут</h1>
+
             <div class="label">
                 <span class="left">Сумма</span>
                 <span class="right">25 000₽</span>
+
+                <input type="range" id="amount" min="1000" max="50000" value="25000" step="1000">
             </div>
             <br>
-            <div class="label">
+            <div class="label" style="top: 130px;">
                 <span class="left">Срок</span>
                 <span class="right">21 день</span>
+
+                <input type="range" id="date" min="7" max="21" value="14" step="1">
             </div>
+            
 
             <button>Получить бесплатно</button>
 

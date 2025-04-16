@@ -5,6 +5,10 @@ const menuWindow = document.querySelector('#menu-attachment');
 const inputWindow = document.getElementById('input-window');
 const leadersWindow = document.querySelector('#leaders-window');
 
+const slider = document.getElementById("amount");
+const slider2 = document.getElementById("date");
+
+
 var menuIsOpened = 0;
 
 
@@ -23,3 +27,21 @@ menu.addEventListener('click', function() {
         menuIsOpened = 0
     }
 })
+
+slider.addEventListener("input", function() {
+  const value = this.value;
+  const min = this.min;
+  const max = this.max;
+  const percentage = ((value - min) / (max - min)) * 100;
+
+  this.style.background = `linear-gradient(to right, #e9820c 0%, #e99c0c ${percentage}%, rgb(12, 12, 14) ${percentage}%, rgb(12, 12, 14) 100%)`;
+});
+
+slider2.addEventListener("input", function() {
+  const value = this.value;
+  const min = this.min;
+  const max = this.max;
+  const percentage = ((value - min) / (max - min)) * 100;
+
+  this.style.background = `linear-gradient(to right, #e9820c 0%, #e99c0c ${percentage}%, rgb(12, 12, 14) ${percentage}%, rgb(12, 12, 14) 100%)`;
+});

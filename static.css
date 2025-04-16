@@ -25,12 +25,12 @@
 @keyframes gain {
     from {
         opacity: 0;
-        height: 300px;
+        height: 100px;
     }
 
     to {
         opacity: 1;
-        height: 500px;
+        height: 400px;
     }
 }
 
@@ -125,7 +125,7 @@ button {
 .box {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 200px;
     border-radius: 0px 0px 50px 50px;
     background: #ffe100;
     background: radial-gradient(circle, rgb(255, 236, 96) 0%, rgb(255, 149, 37) 100%);
@@ -150,7 +150,7 @@ button {
     top: 0px;
     width: 90%;
     left: 5%;
-    height: 500px;
+    height: 400px;
     background-color: rgb(19, 19, 22);
     border-radius: 30px;
     box-shadow: 0px 0px 30px;
@@ -173,7 +173,7 @@ button {
 
 .inputs > button {
     position: relative;
-    top: 350px;
+    top: 200px;
     width: 90%;
     height: 50px;
     left: 5%;
@@ -197,23 +197,24 @@ button {
     color: rgb(209, 209, 209);
     top: 100px;
     font-weight: 700;
+    font-size: 18px;
 }
 
 .label > span.right {
     position: absolute;
-    right: 0;
+    right: 10px;
 }
 
 .label > span.left {
     position: absolute;
-    left: 0;
+    left: 10px;
 }
 
 .options {
     width: 90%;
     left: 5%;
     position: relative;
-    top: 360px;
+    top: 210px;
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -270,4 +271,58 @@ button {
 
 .menu-attachment > button:hover {
     color: white;
+}
+
+input[type="range"] {
+    position: relative;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 96%;
+    height: 15px;
+    left: 2%;
+    background: #ddd;
+    border-radius: 7.5px;
+    outline: none;
+    background-color: rgb(14, 14, 14);
+    background: linear-gradient(to right, #e9820c, #e99c0c 50%, rgb(12, 12, 14) 50%);
+
+    --range: calc(var(--max) - var(--min));
+    --ratio: calc((var(--value) - var(--min)) / var(--range));
+    --sx: calc(0.5 * 2em + var(--ratio) * (100% - 2em));
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background:#e99c0c;
+    border-radius: 50%;
+    cursor: pointer;
+    scale: 1;
+    opacity: 1;
+    transition: 0.3s;
+    
+}
+
+#amount {
+    top: 34px;
+}
+
+#date {
+    top: 34px;
+}
+
+
+.inputs > h1 {
+    position: absolute;
+    left: 7%;
+    top: 10px;
+    color: #e9820c;
+    background-image: linear-gradient(50deg, #e9820c 0%, #eb8e23 46%, #FFCC70 100%);
+    font-weight: 800;
+    font-size: 24px;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
