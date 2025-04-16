@@ -8,8 +8,25 @@ const leadersWindow = document.querySelector('#leaders-window');
 const slider = document.getElementById("amount");
 const slider2 = document.getElementById("date");
 
+const amountInput = document.getElementById("amount");
+const dateInput = document.getElementById("date");
+const amountValue = document.getElementById("amount-val");
+const dateValue = document.getElementById("date-val");
+const amountValueLower = document.getElementById("amount-val-lower");
 
 var menuIsOpened = 0;
+
+amountInput.addEventListener("input", () => {
+    amountValue.textContent = Number(amountInput.value).toLocaleString('ru-RU') + '₽';
+    amountValueLower.textContent = Number(amountInput.value).toLocaleString('ru-RU') + '₽';
+});
+
+dateInput.addEventListener("input", () => {
+    dateValue.textContent = dateInput.value + ' дней';
+    if (dateInput.value == 21) {
+        dateValue.textContent = dateInput.value + ' день';
+    }
+});
 
 
 menu.addEventListener('click', function() {

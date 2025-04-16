@@ -102,7 +102,7 @@ header {
     height: 60px;
     padding-left: 5%;
     padding-right: 5%;
-    z-index: 10;
+    z-index: 1;
 }
 
 header > h3 {
@@ -163,7 +163,7 @@ button {
     top: 30px;
     width: 90%;
     left: 5%;
-    height: 200px;
+    height: 160px;
     background-color: rgb(19, 19, 22);
     border-radius: 30px;
     box-shadow: 0px 0px 30px;
@@ -325,4 +325,23 @@ input[type="range"]::-webkit-slider-thumb {
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.leaders {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.leaders > button {
+    border-radius: 30px;
+    border: none;
+    height: 40px;
+    background-color: rgb(12, 12, 14);
+    color: rgb(197, 197, 197);
+    margin: 5px;
+    margin-left: 10px;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
 }

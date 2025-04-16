@@ -34,14 +34,14 @@
 
             <div class="label">
                 <span class="left">Сумма</span>
-                <span class="right">25 000₽</span>
+                <span class="right" id="amount-val">25 000₽</span>
 
                 <input type="range" id="amount" min="1000" max="50000" value="25000" step="1000">
             </div>
             <br>
             <div class="label" style="top: 130px;">
                 <span class="left">Срок</span>
-                <span class="right">21 день</span>
+                <span class="right" id="date-val">14 дней</span>
 
                 <input type="range" id="date" min="7" max="21" value="14" step="1">
             </div>
@@ -56,7 +56,7 @@
                 </div>
                 <div>
                     <span class="header">Возвращаете</span><br>
-                    <span class="value">25 000₽</span>
+                    <span class="value" id="amount-val-lower">25 000₽</span>
                 </div>
                 <div>
                     <span class="header">Деньги у вас</span><br>
@@ -67,7 +67,12 @@
         </div>
 
         <div class="leaders" id="leaders-window">
-
+            <button>Одобряем 98% заявок</button>
+            <button>Быстрые зачисления</button>
+            <button>От 1 000₽</button>
+            <button>Погашение хоть в первый день</button>
+            <button>Первый займ бесплатный</button>
+            <button>18+</button>
         </div>
 
         <footer></footer>
