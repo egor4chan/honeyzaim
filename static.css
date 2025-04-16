@@ -467,9 +467,11 @@ hr {
     left: 10%;
     width: 90%;
     top: 270px;
+    text-decoration: none;
 }
 
 .infosmall {
+    text-decoration: none;
     display: inline-block;
     color: grey;
     font-size: 11px;
