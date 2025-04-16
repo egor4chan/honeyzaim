@@ -458,3 +458,24 @@ hr {
     width: 80%;
     top: 250px;
 }
+
+.info {
+    display: block;
+    color: grey;
+    font-size: 14px;
+    position: relative;
+    left: 10%;
+    width: 90%;
+    top: 270px;
+}
+
+.infosmall {
+    display: block;
+    color: grey;
+    font-size: 12px;
+    position: relative;
+    left: 10%;
+    width: 70%;
+    top: 270px;
+    width: 90%;
+}
