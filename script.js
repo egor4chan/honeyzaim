@@ -72,9 +72,11 @@ slider2.addEventListener("input", function() {
 window.addEventListener('scroll', function () {
     const scrollPosition = window.scrollY;
     if (scrollPosition > 30) {
+        if (menuIsOpened == 1) {
         menuWindow.style.top = '-250px'
         inputWindow.style.animation = 'movedown 0.4s forwards'
         leadersWindow.style.animation = 'movedown-gain 0.4s forwards'
         menuIsOpened = 0
+        }
     }
 });
