@@ -1,0 +1,272 @@
+@keyframes load {
+    from {
+        opacity: 1;
+        top: 0px;
+    }
+
+    to {
+        opacity: 1;
+        top: 100px;
+    }
+}
+
+@keyframes load-leaders {
+    from {
+        opacity: 1;
+        top: 30px;
+    }
+
+    to {
+        opacity: 1;
+        top: 130px;
+    }
+}
+
+@keyframes gain {
+    from {
+        opacity: 0;
+        height: 300px;
+    }
+
+    to {
+        opacity: 1;
+        height: 500px;
+    }
+}
+
+@keyframes moveup {
+    from {
+        top: 100px;
+    }
+
+    to {
+        top: 190px;
+    }
+}
+
+@keyframes moveup-gain {
+    from {
+        top: 130px;
+    }
+
+    to {
+        top: 220px;
+    }
+}
+
+@keyframes movedown {
+    from {
+        top: 190px;
+    }
+
+    to {
+        top: 100px;
+    }
+}
+
+@keyframes movedown-gain {
+    from {
+        top: 220px;
+    }
+
+    to {
+        top: 130px;
+    }
+}
+
+* {
+    font-family: 'Inter';
+    transition: .3s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(19, 19, 22);
+    height: 100vh;
+    width: 100vw;
+}
+
+footer {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 200px;
+}
+
+header {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 90%;
+    height: 60px;
+    padding-left: 5%;
+    padding-right: 5%;
+    z-index: 10;
+}
+
+header > h3 {
+    font-weight: 800;
+}
+
+header > img {
+    position: absolute;
+    right: 5%;
+    height: 25px;
+    width: 25px;
+    top: 17px;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 0px 0px 50px 50px;
+    background: #ffe100;
+    background: radial-gradient(circle, rgb(255, 236, 96) 0%, rgb(255, 149, 37) 100%);
+
+    animation: gain 1s forwards ease;
+}
+
+#menu-window {
+    width: 50%;
+    height: 200px;
+    border-radius: 20px;
+    background-color: rgb(19, 19, 22);
+    position: fixed;
+    z-index: 9;
+    right: -50%;
+    top: 70px;
+    box-shadow: 0px 0px 30px;
+}
+
+.inputs {
+    position: relative;
+    top: 0px;
+    width: 90%;
+    left: 5%;
+    height: 500px;
+    background-color: rgb(19, 19, 22);
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px;
+
+    animation: load 0.7s forwards ease-in-out;
+}
+
+.leaders {
+    position: relative;
+    top: 30px;
+    width: 90%;
+    left: 5%;
+    height: 200px;
+    background-color: rgb(19, 19, 22);
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px;
+
+    animation: load-leaders 0.7s forwards ease-in-out;
+}
+
+.inputs > button {
+    position: relative;
+    top: 350px;
+    width: 90%;
+    height: 50px;
+    left: 5%;
+    border-radius: 15px;
+    background:  rgb(250, 138, 19);
+    font-size: 16px;
+    font-weight: 800;
+    border: none;
+    box-shadow: 0px 0px 20px rgb(250, 138, 19, 0.5);
+}
+
+.inputs > button:hover {
+    box-shadow: 0px 0px 20px rgb(250, 138, 19, 0.8);
+}
+
+.label {
+    position: relative;
+    width: 90%;
+    left: 5%;
+    color: rgb(209, 209, 209);
+    top: 100px;
+    font-weight: 700;
+}
+
+.label > span.right {
+    position: absolute;
+    right: 0;
+}
+
+.label > span.left {
+    position: absolute;
+    left: 0;
+}
+
+.options {
+    width: 90%;
+    left: 5%;
+    position: relative;
+    top: 360px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.options > div {
+    position: relative;
+    width: 30%;
+    color: rgb(194, 194, 194);
+    font-size: 12px;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.value {
+    position: absolute;
+    margin-left: 0px;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-attachment {
+    width: 90%;
+    height: 100px;
+    left: 5%;
+    position: absolute;
+    margin-bottom: 20px;
+    z-index: 10;
+    background-color: rgb(19, 19, 22);
+    border-radius: 30px;
+    top: -270px; /* 70px */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.menu-attachment > button {
+    position: relative;
+    border: none;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 30px;
+    width: 45%;
+    background-color: rgb(19, 19, 22);
+    color: grey;
+}
+
+.menu-attachment > button:hover {
+    color: white;
+}
