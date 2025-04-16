@@ -545,6 +545,7 @@ hr {
     width: 86%;
     color: grey;
     font-size: 12px;
+    display: block;
 }
 
 .message {
