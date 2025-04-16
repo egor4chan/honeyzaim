@@ -1,3 +1,42 @@
+@keyframes remove {
+    from {
+        opacity: 1;
+        top: 0;
+    }
+
+    95% {
+        top: 30px;
+        opacity: 0;
+    }
+
+    to {
+        top: 30px;
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes removebox {
+    from {
+        height: 400px;
+    }
+    to {
+        height: 300px;
+    }
+}
+
+
+@keyframes add {
+    from {
+        opacity: 0;
+    }
+
+    100% {
+        top: 100px;
+        opacity: 1;
+    }
+}
+
 @keyframes load {
     from {
         opacity: 1;
@@ -97,6 +136,10 @@ body {
     width: 100vw;
     -ms-overflow-style: none;
     scrollbar-width: 0px;
+}
+
+.content {
+    position: relative;
 }
 
 body::-webkit-scrollbar {
@@ -259,6 +302,7 @@ button {
     bottom: 10px;
     width: 100%;
     text-align: center;
+    font-weight: 700;
 }
 
 .menu-attachment {
@@ -480,4 +524,49 @@ hr {
     width: 70%;
     top: 270px;
     width: 90%;
+}
+
+.cloud {
+    position: absolute;
+    top: -500px;
+    width: 90%;
+    left: 5%;
+    height: 400px;
+    background-color: rgb(19, 19, 22);
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px;
+
+}
+
+.order > span.desc {
+    position:  relative;
+    top: 70px;
+    left: 7%;
+    width: 86%;
+    color: grey;
+    font-size: 12px;
+}
+
+.message {
+    width: calc(86% - 40px);
+    left: 7%;
+    position: relative;
+    height: 50px;
+    padding: 0px 20px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #0a0b0e;
+    top: 90px;
+    color: rgb(218, 218, 218);
+    border: 1px solid #24252c;
+    font-size: 16px;
+}
+
+.message:focus-within {
+    border: 1px solid grey;
+}
+
+.order > button {
+    top: 120px;
 }

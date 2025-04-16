@@ -19,8 +19,13 @@
         <img id="menu" width="48" height="48" src="https://img.icons8.com/deco-glyph/48/menu.png" alt="menu"/>
     </header>
     
-    <div class="box"> <!-- желтая область -->
+    <div class="box" id="box"> <!-- желтая область -->
         
+        <div class="cloud" id="cloud">
+        </div>
+
+        <div class="content" id="content">
+
         <div class="menu-attachment" id="menu-attachment">
             <button>Реферальная система</button>
             <button>Обратная связь</button>
@@ -47,7 +52,7 @@
             </div>
             
 
-            <button>Получить бесплатно</button>
+            <button id="send">Получить бесплатно</button>
 
             <div class="options">
                 <div>
@@ -82,15 +87,15 @@
         <div class="how">
             <h1>Как это работает?</h1>
             <div class="step">
-                <span class="stepnumber">1 шаг - Подайте заявку</span><br>
+                <span class="stepnumber">1 шаг - <span id="gold">Подайте заявку</span></span><br>
                 <span class="stepdesc">Мы сделали процесс создания заявки максимально простым. Займет не более 7 минут.</span>
             </div>
             <div class="step">
-                <span class="stepnumber">2 шаг - Подождите</span><br>
+                <span class="stepnumber">2 шаг - <span id="gold">Подождите</span></span><br>
                 <span class="stepdesc">На этом этапе мы проводим тщательную оценку заёмщика, поэтому нам нужно время - 2 минуты</span>
             </div>
             <div class="step">
-                <span class="stepnumber">3 шаг - Получите деньги</span><br>
+                <span class="stepnumber">3 шаг - <span id="gold">Получите деньги</span></span><br>
                 <span class="stepdesc">Еще одна минутка - и вуаля! Получите деньги любым удобным способом.</span>
             </div>
         </div>
@@ -116,9 +121,11 @@
             © 2025 ООО МКК «Стратосфера»</span>
 
         <footer></footer>
+
+        </div>
     </div>
 
-
+    <script src="road.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
