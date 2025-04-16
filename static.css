@@ -95,6 +95,13 @@ body {
     background-color: rgb(19, 19, 22);
     height: 100vh;
     width: 100vw;
+    -ms-overflow-style: none;
+    scrollbar-width: 0px;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 footer {
@@ -363,17 +370,15 @@ input[type="range"]::-webkit-slider-thumb {
     left: 5%;
     text-align: center;
     font-size: 34px;
-    font-weight: 600;
+    font-weight: 700;
     color: rgb(192, 192, 192);
 
     animation: load-light 2s forwards;
 }
 
 #gold {
-    font-weight: 800;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(50deg, #e9820c 0%, #eb8e23 46%, #FFCC70 100%);
+    font-weight: 700;
+    color: #e9820c;
 }
 
 .how {
@@ -381,18 +386,52 @@ input[type="range"]::-webkit-slider-thumb {
     top: 190px;
     width: 90%;
     left: 5%;
-    height: 200px;
+    height: auto;
     background-color: rgb(19, 19, 22);
     border-radius: 30px;
     box-shadow: 0px 0px 30px;
+    padding-bottom: 80px;
 }
 
 .how > h1 {
-    font-weight: 800;
+    font-weight: 700;
     left: 20px;
     top: 0px;
     position: absolute;
     font-size: 26px;
 
-    color:#e9820c;
+    color:#c4c4c4;
+}
+
+.step {
+    width: 90%;
+    left: 5%;
+    height: auto;
+    background-color: #0a0b0e;
+    position: relative;
+    border-radius: 20px;
+
+    top: 60px;
+    padding-bottom: 26px;
+    margin-top: 10px;
+    
+}
+
+.stepnumber {
+    color: rgb(226, 226, 226);
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+
+.stepdesc {
+    display: block;
+    position: relative;
+    color: grey;
+    font-size: 14px;
+    width: 90%;
+    left: 20px;
+    top: 10px;
 }
